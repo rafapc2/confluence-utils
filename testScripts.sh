@@ -33,10 +33,21 @@ function pause(){
 #
 
 
+
 #parametros
-atlassianUrl="https://SUBDOMAIN.atlassian.net"
-user="USER@MAIL.COM"
-token="CONFLUENCE_token"
+#atlassianUrl="https://SUBDOMAIN.atlassian.net"
+#user="USER@MAIL.COM"
+#token="CONFLUENCE_token"
+
+#read vars from properties file
+while IFS== read -r var value
+do
+    export "$var"="$value"
+    echo "var=$var : value=$value"
+    export "$var"="$value"
+done < config.properties
+
+
 
 spaceKey="~899589794"
 pageParentId="729678897"
@@ -83,7 +94,7 @@ pageContent='<p>Esta es una nueva pagina creada via API</p>'
 
 PageContentHTML=$(<body.html)
 #echo "$value"
-pageTitle='Titulo de la Pagina hija 2'
+pageTitle='Titulo de la Pagina hija 3'
 #./create_child_page.sh $atlassianUrl $user $token $spaceKey "$pageTitle" $pageParentId "$PageContentHTML"
 
 entityId="729744013"
