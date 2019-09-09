@@ -45,7 +45,7 @@ do
     export "$var"="$value"
     echo "var=$var : value=$value"
     export "$var"="$value"
-done < config.properties
+done < config/config.properties
 
 
 
@@ -54,7 +54,7 @@ pageParentId="729678897"
 
 templateId="729744013"
 
-examplePageId="729646684"
+examplePageId="738197549"
 
 #./get_space_info.sh $atlassianUrl $user $token $spaceKey
 

@@ -1,0 +1,38 @@
+{
+    "catalog" : {
+        "name": "Catalogo-Servicios-SOA",
+        "content" : "Catalogo de servicios Falabella Financiero"
+    },
+    "countryList" : [
+        {
+            "countryName" : "Chile",
+            "layers" :[ "OSB-BFCL", "SOA-BFCL", "Producer-BFCL", "OSB-CMRCL", "SOA-CMRCL", "Producer-CMRCL"]
+        },
+        {
+            "countryName" : "Peru",
+            "layers" :[ "OSB-BFPE", "SOA-BFPE", "Producer-BFPE"]
+        },
+        {
+            "countryName" : "Mexico",
+            "layers" :[ "OSB-CMRMX", "SOA-CMRMX", "Producer-CMRMX"]
+        },
+        {
+            "countryName" : "Argentina",
+            "layers" :[ "OSB-CMRAR", "SOA-CMRAR", "Producer-CMRAR"]
+        },
+        {
+            "countryName" : "Colombia",
+            "layers" :[ "OSB-BFCO", "SOA-BFCO", "Producer-BFCO"]
+        },
+        {
+            "countryName" : "Seguros",
+            "layers" :[ "OSB-SEGCL", "SOA-SEGCL", "Producer-SEGCL"]
+        },
+        {
+            "countryName" : "Corporativos",
+            "layers" :[ "OSB-CORP", "SOA-CORP", "Producer-CORP"]
+        }
+    ],
+    "domains":["CANALES","RIESGO","PAGOS","SAT","CORP","CORE"],
+    "appServerVersion":["11g","12c"]
+}
